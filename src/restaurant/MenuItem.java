@@ -64,13 +64,11 @@ public class MenuItem {
 
     @Override
     public String toString() {
-        return "MenuItem{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                ", description='" + description + '\'' +
-                ", category='" + category + '\'' +
-                ", newItem=" + newItem +
-                '}';
+        return "Name: " + name + "\n" +
+                "Price: $" + price + "\n" +
+                "Description: " + description + "\n" +
+                "Category: " + category + "\n" +
+                "New Item? " + newItem + "\n";
     }
 
     @Override

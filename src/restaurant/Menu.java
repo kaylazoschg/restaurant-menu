@@ -8,9 +8,9 @@ public class Menu {
     private Date dateUpdated;
     private ArrayList<MenuItem> items;
 
-    public Menu() {
+    public Menu(ArrayList<MenuItem> items) {
         this.dateUpdated = new Date();
-        this.items = new ArrayList<>();
+        this.items = items;
     }
 
     public Date getDateUpdated () {
@@ -43,9 +43,8 @@ public class Menu {
 
     @Override
     public String toString() {
-        return "Menu{" +
-                "dateUpdated=" + dateUpdated +
-                ", items=" + items +
-                '}';
+        return "Menu\n" +
+                "Last updated " + dateUpdated + "\n" +
+                "Items: " + items;
     }
 }
